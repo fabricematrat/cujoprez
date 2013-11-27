@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>cujoJS</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+        .highlight {color:#3B759E;}
+        </style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+
+                    <img src="img/cujojs.png" width="50%"><br/>
+                    <h3>Architectural Toolkit for JavaScript</h3>
+					<p>
+						<small><a href="http://fabricematrat.github.io">Fabrice Matrat</a> / <a href="http://twitter.com/fabricematrat">@fabricematrat</a></small>
+					</p>
+				</section>
+
+				<section>
+						<img src="img/fabrice.png" style="width:128px; height:128px;"/>
+
+				        <p>Fabrice Matrat</p>
+
+				        <p style="font-size: 30px;color:#3B759E">Web Architect</p>
+
+				        <p style="font-size: 30px;color:#3B759E">15+ years experience</p><br>
+
+
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+						<q>User Groups <span style="font-size: 50px;color:#3B759E">@</span>ctivist</q><br/><br/>
+
+        				<span>
+			    	        <a href="http://www.rivieragug.org"> <br/>
+			    	        	<img src="img/rivieragug.jpg" style="width:128px"/>
+                            </a>
+			             	<a href="http://rivierajug.org/xwiki/bin/view/Main/WebHome">
+			             		<img src="img/jug.png" style="width:256px;"/>
+			             	</a>
+			             	<a href="http://jssophia.github.io/">
+			             		<img src="img/jssophia.jpeg" style="width:148px;"/>
+			             	</a>
+				        </span>
+				</section>
+				<section>
+					<h2>Cujo</h2>
+					<p class="fragment fade-in"> Yet again another <span class="highlight">MVC</span> ? </p>
+					</br>
+					<p class="fragment fade-in"><span class="highlight">Large</span> scale application</p>
+					<p class="fragment fade-in"><span class="highlight">Small</span> module</p>
+					<p class="fragment fade-in">Embrace <span class="highlight">standard</span></p>
+					<p class="fragment fade-in"><span class="highlight" style="font-size: 75px">Fast</span></p>
+				</section>
+				<section>
+                    <h2>module<span class="highlight">s</span></h2>
+					<img src="img/cujo.png"/>
+				</section>
+				<section>
+					<h2><span class="highlight">Tidy up</span> your Code ?</h2>
+					<img src="img/cable.jpg">
+                    <p>... or live with the <span class="highlight">mess</span> </p>
+				</section>
+				<section>
+					<h2>AMD</h2>
+                    <p></p>
+					<p><span class="highlight">A</span>synchronous <span class="highlight">M</span>odule <span class="highlight">D</span>efinition</p>
+                    <img src="img/wait.jpg" width="30%"><br/>
+                    <p><small>because nobody likes to wait</small></p>
+
+				</section>
+				<section>
+					<h2>Curl</h2>
+                    <img src="img/LeafCurl.jpg" width="50%"><br/>
+					<p class="fragment fade-in"><span class="highlight"><small>small</small></span></p>
+					<p class="fragment fade-in"><span class="highlight">4k</span> only</p>
+					<p class="fragment fade-in"><span class="highlight">AMD-compliant</span> asynchronous loader</p>
+					<p class="fragment fade-in">and ... </p>
+				</section>
+
+                <section>
+                    <h2>curl == <span class="highlight">fast</span></h2>
+                    <img src="img/Batmobile.jpg" width="70%"><br/>
+                    <p>Designed to be <span class="highlight">fast</span></p>
+                </section>
+
+                <section>
+					<h2>Curl's buddies</h2>
+                    <img src="img/friends.jpg" width="50%"><br/>
+<p class="fragment grow"><span class="highlight">AMD</span>-formatted JS modules in // (fast!)</p>
+<p class="fragment grow"><span class="highlight">CommonJS</span> modules (fast!)</p>
+<p class="fragment grow"><span class="highlight">non-AMD</span> JS files in // (fast!)</p>
+<p class="fragment grow"><span class="highlight">CSS, text</span> files in // (fast!)</p>
+<p class="fragment grow">Waits for dependencies before executing JS</p>
+<p class="fragment grow">Waits for domReady, <span class="highlight">if/when</span> desired</p>
+</br>
+<p class="fragment fade-in">And it's <span class="highlight" style="font-size: 75px">fast<span></p>
+				</section>
+				<section>
+					<h2>Cram</h2>
+                    <img src="img/cramming.gif" width="50%"><br/>
+					<p>cujoJS resource <span class="highlight">assembler</span></p>
+					<p><small>Compile all modules into one or small numbers of JS files</small> </p>
+					<p>and it is...</p>
+				</section>
+                <section>
+                    <p>... <span class="highlight">FAST</span></p>
+                    <img src="img/porche.jpeg" width="50%"><br/>
+                    <p>even for a <span class="highlight">resource</span> assembler</p>
+                </section>
+
+				<section>
+                    <h2>Cram</h2>
+                    <br/>
+					<p class="fragment highlight-blue">No-configuration operation for simple applications</p>
+					<p class="fragment highlight-blue">High performance operation</p>
+					<p class="fragment highlight-blue">All-in-one bundling of Javascript, CSS, and HTML</p>
+					<p class="fragment highlight-blue">Efficient, non-blocking loading of bundles</p>
+					<p class="fragment highlight-blue">Just-in-time loading of bundles</p>
+				</section>
+				<section>
+                    <h2>Cram: the <span class="highlight">code</span></h2> <br/>
+					<pre>In your index.html<code>
+<script data-curl-run src="app/run.js"></script>
+					</code></pre>    <br/>
+
+					<pre>In your package.json<code>
+{
+  "name": "MyApp",
+  ....
+  "scripts": {
+    "cram": "cram index.html --include curl/plugin/domReady 
+    		--include curl/plugin/text 
+    		--output app/run.cram.js",
+  }
+}
+					</code></pre>
+				</section>
+				<section>
+					<h2>Is that <span class="highlight">enough</span> ? </h2>
+                    <img src="img/lots-of-people.jpeg" width="50%"><br/>
+				</section>
+				<section>
+					<h2>Dependency Injection</h2>
+					<img src="img/dependency-injection.jpg" width="30%"/>  <br/>
+					<ul>
+						<li>Proven by <span class="highlight">Spring</span></li>
+						<li>Why not in <span class="highlight">JS</span> ?</li>
+						<li><span class="highlight">Browser</span> or <span class="highlight">Server</span></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Wire</h2>
+                    <img src="img/wired.jpg" width="50%"/>  <br/>
+					<ul>
+					<li><span class="highlight">D</span>ependency <span class="highlight">I</span>njection</li>
+					<li><span class="highlight">Lifecycle</span> management</li>
+					<li><span class="highlight">Configuration</span></li>
+					</ul>
+				</section>
+				<section>
+                    <h2>wire: the <span class="highlight">code</span></h2> <br/>
+
+					<pre><code>
+define({
+    message: "I haz been wired",
+
+    // Create an instance of the hello-wired module.
+    helloWired: {
+        create: {
+            module: 'app/hello-wired',
+            args: { $ref: 'dom.first!hello' }
+        },
+        init: {
+            sayHello: { $ref: 'message' }
+        }
+    },
+
+    plugins: [
+        { module: 'wire/debug' },
+        { module: 'wire/dom' }
+    ]
+});
+					</code></pre>
+                    <ul>
+                        <li>No <span class="highlight">XML</span> (ugly)</li>
+                        <li>No Annotation in JS</li>
+                    </ul>
+				</section>
+				<section>
+					<h2>AOP</h2><br/>
+                    <img src="img/beurre.jpg" width="40%"/>  <br/>
+                    <p><span class="highlight">A</span>spect <span class="highlight">O</span>riented <span class="highlight">P</span>rogramming</p>
+				</section>
+				<section>
+					<h2>Meld</h2>
+                    <img src="img/trans.jpeg" width="50%"/>  <br/>
+                    <p>Being able to <span class="highlight">change/add</span> behavior to existing methods</p>
+				</section>
+				<section>
+                    <h2><span class="highlight">Ever</span> seen this?</h2>  <br/>
+					<pre><code>
+    var origDoSomething = thing.doSomething;
+    thing.doSomething = function() {
+        doSomethingElseFirst();
+        return origDoSomething.apply(this, arguments);
+    }
+                        </code></pre>
+				</section>
+				<section>
+                    <h2>meld: the <span class="highlight">code</span></h2> <br/>
+					<pre><code>
+var myObject = {
+    doSomething: function(a, b) {
+        return a + b;
+    }
+};
+
+// Call a function after myObject.doSomething returns
+var remover = meld.after(myObject, 'doSomething', function(result) {
+    console.log('myObject.doSomething returned: ' + result);
+});
+
+myObject.doSomething(1, 2); // Logs: "myObject.doSomething returned: 3"
+
+remover.remove();
+
+myObject.doSomething(1, 2); // Nothing logged
+					</code></pre>
+
+				</section>
+				<section>
+                    <h2>AOP + DI: the <span class="highlight">code</span></h2> <br/>
+
+					<pre><code>
+todos: {
+        create: {
+                module: 'cola/Collection',
+                args: {
+                        strategyOptions: {
+                                validator: { module: 'app/create/validateTodo' }
+                        }
+                }
+        },
+        before: {
+                add: 'cleanTodo | generateMetadata',
+                update: 'cleanTodo'
+        }
+}
+					</code></pre>
+                     <p><span class="highlight">meld</span> + <span class="highlight">wire</span> = <3</p>
+				</section>
+				<!--<section>-->
+					<!--Interaction with other frw:-->
+					<!--Use meld to define transaction boundary for angular.js-->
+				<!--</section>-->
+				<section>
+					<h2><span class="highlight">Double</span> Binding</h2>
+                    <img src="img/darkvador.jpeg" width="60%"/>  <br/>
+                    <p>the <span class="highlight">Force</span> unleashed</p>
+				</section>
+				<section>
+                    <h2>Cola</h2>
+                    <img src="img/coca-cola-main-design.jpg" width="40%"/>  <br/>
+                    <p>enjoy!</p>
+                </section>
+                <section>
+                    <h2>Cola: the <span class="highlight">code</span></h2> <br/>
+					<pre><code>define({
+  $exports: { $ref: 'contacts' },
+  contacts: {
+    create: {
+      module: 'cola/Collection',
+    },
+    before: {
+      add: 'cleanContact | generateMetadata',
+    }
+  },
+  contactStore: {
+    create: {
+      module: 'cola/adapter/LocalStorage', args: 'contacts-demo'
+    },
+    bind: { $ref: 'contacts' }
+  },
+  cleanContact: { module: 'app/collection/cleanContact' },
+  generateMetadata: { module: 'app/collection/generateMetadata' },
+  $plugins: [
+    { module: 'wire/dom' },
+    { module: 'wire/on' },
+    { module: 'wire/aop' },
+    { module: 'cola' }
+  ]
+});
+                    </code></pre>
+                </section>
+				<section>
+					<h2><span class="highlight">Async</span>hronous development</h2>  <br/>
+                    <img src="img/Async.png" width="60%"/>  <br/>
+                    <p>Promise</p>
+				</section>
+
+				<section>
+					<h2>When</h2>
+
+					<p class="fragment fade-in"><span class="highlight">Lightweight</span> Promises/A+ implementation<p>
+                    <p class="fragment fade-in"><span class="highlight">Fast</span></p>
+					<p class="fragment fade-in">No <span class="highlight">Dependencies</span></p>
+                        <p class="fragment fade-in"><a href="https://github.com/promises-aplus/promises-tests">Standard</a></p>
+				</section>
+				<section>
+                    <h2>When: the <span class="highlight">code</span></h2> <br/>
+					<pre><code>
+var when = require('when');
+var promise = when(0);
+function increment(count) {
+    console.log(count);
+    return count + 1;
+}
+
+promise.then(increment)   // 0
+       .then(increment)   // 1
+       .then(increment)   // 2
+       .then(increment);  // 3					
+					</code></pre>
+				</section>
+				<section>
+					<h2>Rest</h2>
+                    <img src="img/rest.jpg" width="60%"/>  <br/>
+				</section>
+				<section>
+                    <h2>rest: the <span class="highlight">code</span></h2> <br/>
+					<pre><code>
+var rest = require('rest');
+
+rest('/').then(function(response) {
+  console.log('response: ', response);
+});
+					</code></pre>
+				</section>
+
+                <section>
+					<h2>Msgs</h2>
+                    <img src="img/message-in-a-bottle.jpg" width="30%"/>  <br/>
+					<ul>
+					<li><span class="highlight">E</span>nterprise <span class="highlight">I</span>ntegration <span class="highlight">P</span>atterns</li>
+					<li>Influenced by <span class="highlight">Spring</span> Integration</li>
+					<li><span class="highlight">Messaging</span> pattern</li>
+					</ul>
+				</section>
+				<section>
+                    <h2>msgs: the <span class="highlight">code</span></h2> <br/>
+					<pre><code>
+var bus, webSocketServer, redis;
+
+require('msgs/adapters/nodeStream');
+require('msgs/adapters/redis');
+require('msgs/channels/pubsub');
+
+bus = require('msgs').bus();
+redis = require('redis');
+webSocketServer = ...;
+
+bus.pubsubChannel('fromClient');
+bus.pubsubChannel('toClient');
+webSocketServer.on('connection', function (connection) {
+  bus.nodeStreamGateway(connection, { output: 'fromClient', input: 'toClient' });
+});
+bus.redisGateway(redis.createClient, 'redisTopic', { output: 'toClient', input: 'fromClient' });
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h2><span class="highlight">Functional</span> Programming</h2> <br/>
+                    <img src="img/lambda.png" width="40%"/>  <br/>
+				</section>
+				<section>
+					<h2>Most</h2><br/>
+                    <img src="img/monad.png" width="20%"/>  <br/>
+                    <p class="fragment grow"><span class="highlight">Monadic</span> Stream implementation</p>
+                    <p class="fragment grow"><a href="https://github.com/fantasyland/fantasy-land">Support standard define by FantasyLand</a></p>
+				</section>
+				<section>
+                    <h2><span class="highlight">Stress</span> time</h2>
+                    <img src="img/stresss.jpg" width="50%"/>  <br/>
+					<p><small>A bit of live coding with most</small></p>
+				</section>
+				<section>
+					<h2>Try it, use it, be happy</h2><br/>
+                    <img src="img/Happy.gif" width="40%"/>  <br/>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
